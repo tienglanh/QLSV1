@@ -1,0 +1,16 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>doimatkhau</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-input [(ngModel)]="user.password" type="text" placeholder="password"></ion-input>
+      </ion-item>
+      <ion-item>
+       <ion-input [(ngModel)]="user.newpassword" placeholder="Password" type="password"> </ion-input>
+      </ion-item>
+      <button ion-button full (click)="changepass(user)" > new password</button>
+</ion-content>
